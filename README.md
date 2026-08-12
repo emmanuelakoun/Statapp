@@ -28,8 +28,7 @@ missing baselines:
 
 1. **one-parameter** persistent homology instead of multiparameter, and
 2. explicit **coordinate-based geometric statistics** instead of topology.
-
-The answer turns out to be uncomfortable for TDA, and is reported as such.
+3. 
 
 ## Data
 
