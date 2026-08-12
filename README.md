@@ -157,7 +157,7 @@ not persistent homology per se — carrying much of their reported advantage.
 ```
 ├── data/
 │   ├── large_hypoxic_regions/     # 2 annotated tissue regions
-│   └── roi_1_5mm/{CD8,CD68,FoxP3} # 1620 ROI point clouds over 16 tumors
+│   └── roi_1_5mm/{CD8,CD68,FoxP3} # 1618 ROI point clouds over 16 tumors
 ├── notebooks/
 │   ├── 01_synthetic_validation.ipynb    # pipeline sanity checks on known topology
 │   └── 02_tumor_microenvironment.ipynb  # the analysis
