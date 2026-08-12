@@ -1,17 +1,35 @@
 [project]
-name = "statapp"
-version = "0.1.0"
-description = "Add your description here"
+name = "statapp-tda"
+version = "1.0.0"
+description = "Topological classification of immune cell spatial patterns in the tumor microenvironment"
 readme = "README.md"
 requires-python = ">=3.13"
+
+# Versions are pinned to those used to produce the results in report/ and README.md.
 dependencies = [
-    "gudhi>=3.12.0",
+    # Topological data analysis
+    "gudhi==3.12.0",
+    "ripser==0.6.14",
+    "persim==0.3.8",
+    "tadasets>=0.2.1",
+    # Scientific computing
+    "numpy==2.4.2",
+    "pandas==3.0.1",
+    "scipy==1.17.1",
+    # Machine learning
+    "scikit-learn==1.8.0",
+    "joblib==1.5.3",
+    # Plotting
+    "matplotlib==3.10.8",
+    "seaborn==0.13.2",
+    # Notebooks
     "ipykernel>=7.2.0",
-    "matplotlib>=3.10.8",
-    "numpy>=2.4.2",
-    "optuna>=4.8.0",
-    "pandas>=3.0.1",
-    "persim>=0.3.8",
-    "ripser>=0.6.14",
-    "seaborn>=0.13.2",
+    "jupyterlab>=4.2",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/statapp_tda"]
