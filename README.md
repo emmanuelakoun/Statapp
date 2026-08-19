@@ -37,7 +37,7 @@ Both datasets come from Vipond et al. (2021), derived from immunohistochemistry 
 
 ROIs with fewer than 20 cells are discarded as sparse point clouds carry no meaningful topological signal. This leaves **530 CD8, 502 FoxP3 and 549 CD68 ROIs (1581 in total)**.
 
-Spatial architecture of the tumor microenvironment
+![](figures/spatial_architecture.png)
 
 The large hypoxic regions show a concentric architecture: a necrotic core, a hypoxic belt rich in FoxP3 cells, and a well-oxygenated periphery where CD8 and CD68 predominate. FoxP3 cells are markedly more hypoxic (CAIX+) than the two other populations. This is consistent with the known biology of regulatory T cell recruitment in hypoxic niches, and the motivation for looking at *shape*.
 
@@ -92,7 +92,7 @@ Pairwise tasks, same protocol:
 Leave-one-tumor-out confirms the ordering and the variance: coordinates 86.6 % ± 11.9 %,
 `H0 + H1` landscapes 64.7 % ± 14.4 %.
 
-Confusion matrices
+![](figures/confusion_matrices.png)
 
 ### Statistical tests (tumor-level, paired, α = 0.0167)
 
